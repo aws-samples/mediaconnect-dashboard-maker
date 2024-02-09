@@ -11,14 +11,14 @@ High resolution metrics at 1s intervals exist for most MediaConnect metrics. Sho
 Use longer-interval metrics for larger timespans.
 _
 
-### You can invoke this script directly in your AWS CLI or CloudShell prompt by copying and pastig this one line below:
+### You can invoke this script directly in your AWS CLI or CloudShell prompt by copying and pasting this one line below:
 
 ```
 python3 -c "$(curl -fsSL https://raw.githubusercontent.com/aws-samples/mediaconnect-dashboard-maker/main/MediaConnect_dashmaker_v07.py)"
 ```
 
 ===============
-### For more information on MEdiaConnect mertrics, see the [documentation](https://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-source-health.html)
+### For more information on MediaConnect mertrics, see the [documentation](https://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-source-health.html)
 
 _ _ 
 ### For more AWS Media Services dashboard scripts, see the [AWS Blog Post here](https://aws-blogs-prod.amazon.com/media/cs-quick-and-easy-media-services-dashboards/)
