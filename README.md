@@ -1,14 +1,14 @@
 ## MediaConnect Easy Dashboard Maker
 
-This script will quickly make a CloudWatch dashboard for one, tagged, or all MediaConnect flows in found in your current AWS Account and Region. 
+This script will quickly make a CloudWatch dashboard for one, tagged, or all MediaConnect flows located in your current AWS Account and Region. 
 
 ![chart1](https://github.com/aws-samples/mediaconnect-dashboard-maker/blob/main/exampledash.jpg)
 
-The new dashboard has widgets for the most common & useful service metrics. 
-Remember to alter the time interval (granularity)  and time span (longevity)  of the chart to fit your workflow.
+The new dashboard includes widgets for the most common & useful service metrics. 
+*Remember* to update the time interval (granularity)  and time span (longevity)  of the chart to fit your workflow.
 
 High resolution metrics at 1s intervals exist for most MediaConnect metrics. 
-Short -interval metrics are not retained very long. 
+Short -interval metrics are not retained very long (3 hours). Refer to [the documentation](https://aws.amazon.com/cloudwatch/faqs/#:~:text=The%20retention%20period%20is%2015,hour%20available%20for%2015%20months).) for roll-up intervals. 
 Use longer-interval metrics for larger timespans.
 
 - -  
