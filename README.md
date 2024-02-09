@@ -8,9 +8,9 @@ The dashboard will have widgets for the most common and useful service metrics.
 
 Remember to alter the time interval (granularity)  and time span (longevity)  of the chart to fit your workdlow.
 
-High resolution metrics at 1s intervals exist for most MediaConnect metrics.
-
-Short -interval metrics are not retained very long.  Use longer-interval metrics for larger timespans.
+High resolution metrics at 1s intervals exist for most MediaConnect metrics. Short -interval metrics are not retained very long. 
+Use longer-interval metrics for larger timespans.
+_
 
 ### You can invoke this script directly in your AWS CLI or CloudShell prompt by copying and pastig this one line below:
 
