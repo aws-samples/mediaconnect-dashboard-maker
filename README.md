@@ -2,6 +2,8 @@
 
 This script will quickly make a CloudWatch dashboard for one, tagged, or all MediaConnect flows in found in your current AWS Account and Region. 
 
+![chart1](https://github.com/aws-samples/mediaconnect-dashboard-maker/blob/main/exampledash.jpg)
+
 The dashboard will have widgets for the most common and useful service metrics.
 
 Remember to alter the time interval (granularity)  and time span (longevity)  of the chart to fit your workdlow.
