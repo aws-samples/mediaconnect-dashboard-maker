@@ -18,5 +18,7 @@ python3 -c "$(curl -fsSL https://raw.githubusercontent.com/aws-samples/mediaconn
 ```
 
 ===============
+### For more information on MEdiaConnect mertrics, see the [documentation](https://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-source-health.html)
 
+_ _ 
 ### For more AWS Media Services dashboard scripts, see the [AWS Blog Post here](https://aws-blogs-prod.amazon.com/media/cs-quick-and-easy-media-services-dashboards/)
