@@ -1,17 +1,15 @@
-## My Project
+## MediaConnect Easy Dashboard Maker
 
-TODO: Fill this README out!
+This script will quickly make a CloudWatch dashboard for one, tagged, or all MediaConnect flows in found in your current AWS Account and Region. 
 
-Be sure to:
+The dashboard will have widgets for the most common and useful service metrics.
 
-* Change the title in this README
-* Edit your repository description on GitHub
+Remember to alter the time interval (granularity)  and time span (longevity)  of the chart to fit your workdlow.
 
-## Security
+High resolution metrics at 1s intervals exist for most MediaConnect metrics.
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+Short -interval metrics are not retained very long.  Use longer-interval metrics for larger timespans.
 
-## License
+You can invoke this script directly in your AWS CLI or CloudShell prompt by copying and pastig this one line below:
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
-
+XXX
