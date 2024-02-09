@@ -7,9 +7,11 @@ This script will quickly make a CloudWatch dashboard for one, tagged, or all Med
 The new dashboard has widgets for the most common & useful service metrics. 
 Remember to alter the time interval (granularity)  and time span (longevity)  of the chart to fit your workflow.
 
-High resolution metrics at 1s intervals exist for most MediaConnect metrics. Short -interval metrics are not retained very long. 
+High resolution metrics at 1s intervals exist for most MediaConnect metrics. 
+Short -interval metrics are not retained very long. 
 Use longer-interval metrics for larger timespans.
-_
+
+- -  
 
 ### You can invoke this script directly in your AWS CLI or CloudShell prompt by copying and pasting this one line below:
 
