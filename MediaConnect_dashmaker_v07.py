@@ -40,7 +40,7 @@ EMX_SourceConnected_widget_d = {
             "type": "metric",
             "height": 6,
             "width": 18,
-            "y": 6,
+            "y": 0,
             "x": 0,
             "properties": {
                 "metrics": [
@@ -90,7 +90,7 @@ EMX_SourceNotRecoveredPackets_widget_d =  {
             "type": "metric",
             "height": 6,
             "width": 18,
-            "y": 24,
+            "y": 30,
             "x": 0,
             "properties": {
                 "metrics": [
@@ -109,7 +109,7 @@ EMX_SourceFECRecovered_widget_d = {
             "type": "metric",
             "height": 6,
             "width": 18,
-            "y": 30,
+            "y": 24,
             "x": 0,
             "properties": {
                 "metrics": [
@@ -153,6 +153,16 @@ EMX_SourceContinuityCounter_widget_d = {
             }
 }
         
+#------------------------------------------------------
+# definitions widget
+MDEFS = {
+            "height": 13,
+            "width": 18,
+            "y": 36,
+            "x": 0,
+            "type": "text",
+            "properties": {"markdown": "### Metrics Definitions\n\n\n \nMediaConnect Metrics: \n \nMetric Name | Definition | Meaning\n----|-----|------\nSourceBitRate|bitrate of the incoming source.| \nSourceConnected|Value of 1 indicates source connected. This metric applies only to sources that use the Zixi, SRT, or Fujitsu-QoS protocol.|Absence of source = no output. Threshold alarms are recommended for automated alerting.\nSource Continuity Counter errors | Incorrect source packet order or lost packets.| Packets arrived out of order or not at all.  Depending on protol used,  packets may subsequently be retried (see ARQ) or restored by error correction before fowarding to destinations. \nSourceFECPackets|number of packets that were transmitted using forward error correction (FEC) and received. This metric applies only to sources that use the RTP-FEC protocol or the Zixi protocol.| Received packets. \nSourceRecoveredPackets|Data lost in transit to AWS abut subsequently recovered by ARQ or error correction.|Data successfully recovered.\nSourceNotRecoveredPackets|Data lost in transit to AWS and not recovered by ARQ or error correction.|Data not recovered. \n \n### Metrics Granularity\nInterval| Data Retention \n-----|-----\n1/5/10/30 sec| last 3 hours\n60 sec| 15 days\n300/900 sec | 63 days\n1hr|15 months"}
+}
 
 #-----------------------------------------------------------------------------------------------------
 ## Aggregate all the metrics dictionaries into a list of dictionaries
@@ -349,7 +359,7 @@ for FlowIndex in range (0, FlowCount):
 # ------------------------------------------------------------------------------------
 
 FileOpen = '{"widgets": ['
-FileClose = ']}'
+FileClose = '}]}'
 ## 
 ##  Assemble full JSON as a list of strings 
 WidgetStringsList=[]
@@ -366,8 +376,14 @@ for counter in range (0, len(WidgetsList)) :
 	FullJSON+=S
 ##
 ##remove the comma after final widget and finish the JSON
+print("###########","\n", "FullJSON is now:", FullJSON)
+FullJSON+=str(MDEFS)
+FullJSON = FullJSON.replace("'",'"')
 FullJSON = FullJSON[:-1]
+
 FullJSON+=FileClose
+print("###########","\n", "FullJSON is now:", FullJSON)
+
 ##
 print("")
 dashfile = "MediaConnect_dashjson_" + tstamp
