@@ -9,8 +9,10 @@ The new dashboard includes widgets for the most common & useful service metrics.
 
 High resolution metrics at 1s intervals exist for most MediaConnect metrics. 
 Short -interval metrics are not retained very long (3 hours). Refer to [the documentation](https://aws.amazon.com/cloudwatch/faqs/#:~:text=The%20retention%20period%20is%2015,hour%20available%20for%2015%20months) for roll-up intervals. 
-Use longer-interval metrics for larger timespans.
 
+Refer to the "Denitions" widget for explanations of the metrics used, and the retention intervals for past data points.
+
+[Definitions](https://github.com/aws-samples/mediaconnect-dashboard-maker/blob/main/definitions.jpg)
 - -  
 
 ### You can invoke this script directly in your AWS CLI or CloudShell prompt by copying and pasting this one line below:
