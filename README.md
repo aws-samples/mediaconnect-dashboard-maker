@@ -12,7 +12,7 @@ Short -interval metrics are not retained very long (3 hours). Refer to [the docu
 
 Refer to the "Denitions" widget for explanations of the metrics used, and the retention intervals for past data points.
 
-[Definitions](https://github.com/aws-samples/mediaconnect-dashboard-maker/blob/main/definitions.jpg)
+[Definitions](https://raw.githubusercontent.com/aws-samples/mediaconnect-dashboard-maker/main/definitions.jpg)
 - -  
 
 ### You can invoke this script directly in your AWS CLI or CloudShell prompt by copying and pasting this one line below:
